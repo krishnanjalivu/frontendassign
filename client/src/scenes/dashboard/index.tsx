@@ -1,4 +1,7 @@
 import { Box, useMediaQuery } from "@mui/material";
+import Row1 from "./Row1";
+import Row2 from "./Row2";
+import Row3 from "./Row3";
 
 const gridTemplateLargeScreens = `
 "a b c"
@@ -70,16 +73,9 @@ const Dashboard = () => {
             }
       }
     >
-      <Box bgcolor="white" gridArea="a"></Box>
-      <Box bgcolor="white" gridArea="b"></Box>
-      <Box bgcolor="white" gridArea="c"></Box>
-      <Box bgcolor="white" gridArea="d"></Box>
-      <Box bgcolor="white" gridArea="e"></Box>
-      <Box bgcolor="white" gridArea="f"></Box>
-      <Box bgcolor="white" gridArea="g"></Box>
-      <Box bgcolor="white" gridArea="h"></Box>
-      <Box bgcolor="white" gridArea="i"></Box>
-      <Box bgcolor="white" gridArea="j"></Box>
+      <Row1 />
+      <Row2 />
+      <Row3 />
     </Box>
   );
 };
